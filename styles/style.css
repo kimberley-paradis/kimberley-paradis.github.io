@@ -9,24 +9,12 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: #020432;
 }
  
-/*body {
-  background-color: powderblue;
-  width: 600px;
-  border: 2px solid black;
-  padding: 0px 20px 20px 20px;
-  
+.body {
+    color: #020432;
 }
-
-h1 {
-	font-size: 60px;
-	text-align: center;
-	margin: 0;
-	padding: 20px 0;
-	color: #ff00ff;
-	
-}*/
 .h1 {
     display: inline-block;
     text-decoration: none;
@@ -124,11 +112,15 @@ h1 {
   color: white;
   font-size: 35px;
   cursor: pointer;
+    column-gap: 40px;
 }
+
 .column {
-  float: left;
-  width: 33.333%;
+    column-gap: 40px;
+  float: center;
+  width: 33.33333333333%;
   padding: 5px;
+  column-gap: 40px;
 }
 
 /* Clear floats after image containers */
@@ -198,7 +190,7 @@ form .likert:before {
 }
 form .likert li {
   display:inline-block;
-  width:33%;
+  width:19%;
   text-align:left;
   vertical-align: top;
 }
