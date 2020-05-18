@@ -198,7 +198,7 @@ form .likert:before {
 }
 form .likert li {
   display:inline-block;
-  width:19%;
+  width:33%;
   text-align:left;
   vertical-align: top;
 }
