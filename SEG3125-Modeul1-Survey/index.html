@@ -1,37 +1,122 @@
 
-<! This little bit of code started with https://www.wikihow.com/Create-a-Questionnaire-in-HTML and got modified, by then using info from w3schools.com to continue.
-
-This is an UGLY survey....  PLEASE MODIFY IT!
-
-Caroline Barrière
+<! Kimberley Paradis - 8569079
 May 2020
-
 >
 
 <!DOCTYPE html>
 <html>
-  <head>
+  
+  <head>	
     <meta charset="utf-8">
 	<! IMPORTANT to use a CSS file - external >
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
-    <title>Questionnaire</title>
+    <title>UI Evaluation</title>
+    <style>
+body {
+  background-image: url("background-elegant-white-texture_23-2148438405.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+}
+</style>
   </head>
   
   <body>
-	<h1>Survey</h1>
+<section id=h1>
+
+  <div id="h1-content" class="center-content">
+
+    <div class="center-content-inner">
+
+      <div class="content-section content-section-margin">
+
+        <div class="content-section-grid clearfix">
+        
+        <a href="#" class="h1 nav-link">
+
+          <div class="bottom"></div>
+
+          <div class="top">
+
+          <div class="label">UI Survey</div>
+            
+        		<div class="h1-border h1-border-left"></div>
+        	  <div class="h1-border h1-border-top"></div>
+        	  <div class="h1n-border h1-border-right"></div>
+        		<div class="h1-border h1-border-bottom"></div>
+
+          </div>
+
+        	</a>
+
+        </div>
+
+       </div>
+
+      </div>
+
+     </div>
+
+  </section>
 	<form id="myform" action="index.php" >
 	<br>
 	<br>
 	<! Choose a website to evaluate >
-	<h3><i>This is a terribly ugly page... please modify it!</i></h3>
-	<h2>What do you think of the UI in this <a href="http://Provigo.ca">Provigo</a> site?</h2>	
-	<br>
-	<br>
-	<! You should make your image clickable>
-	<img src="images/Provigo-FrontPage.JPG" alt="http://Provigo.ca" width="450" height="300">
-	<br>
-	<br>
-	<div class="question">
+	<h2>What do you think of the UI in this <a href="http://www.newsoffuture.com/">News of the Future</a> site?</h2>	
+	<h3> (Click to enlarge)</h3>
+
+<head>
+<style>
+<div id="gallery" class="gallery-content">
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  /*float: left;*/
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 1%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  /*text-align: left;*/
+}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column">
+  <a target="_blank" href="rsz_fon_2025.jpg">
+    <img src="rsz_fon_2025.jpg" alt="FUture of News" width="600" height="400">
+  </a>
+  <div class="desc">Future of News Landing Page</div>
+</div>
+
+<div class="column">
+  <a target="_blank" href="NoF_china.jpg">
+    <img src="NoF_china.jpg" alt="China's Economy" width="600" height="400">
+  </a>
+  <div class="desc">Article on China's Economy </div>
+</div>
+
+
+<div class="column">
+  <a target="_blank" href="NoF_survey.jpg">
+    <img src="NoF_survey.jpg" alt="Survey" width="600" height="400">
+  </a>
+  <div class="desc">Website Survey</div>
+</div>
+
+</body>
+</div>
+<div class="question">
 	<h2> Personal Information </h2>
 	<p>First name: <input type="text" name="firstname"></p>
 	<p>Last name: <input type="text" name="lastname"></p>
@@ -41,37 +126,126 @@ May 2020
 	</div>	
 		
 	<div class="question">
-		<h2> What you like </h2>
-		I like:<br>
-		<input type="checkbox" name="Color" value="Red">Red<br>
-		<input type="checkbox" name="Color" value="Green">Green<br>
-		<input type="checkbox" name="Color" value="Blue">Blue<br>
+	
+
+		<! QUESTION 1>
+		<h2> Question 1 </h2>
+		<h4>At first glance, what do you believe is the goal of this website? </h4>
+		 <input type="text" name="feedback"></p>
+		
+		<! QuESTION 2>
+		<h2> Question 2</h2> 
+		<h4> What caught your eye about this website?</h4>
+		<input type="checkbox" name="Option" value="WebpageTitle">Webpage Title<br>
+		<input type="checkbox" name="Option" value="ArtclePictures">Article Pictures<br>
+		<input type="checkbox" name="Option" value="Ads">Ads<br>
+		<input type="checkbox" name="Option" value="Other">Other<br>
 		
 		<br>
+		<! QUESTION 3>
+		<h2> Question 3 </h2>
+		<h4> Do you find the ads cumbersome?</h4>
+	 	<form>
+ 		 <input type="radio" id="Yes" name="q" value="Yes">
+ 		 <label for="male">Yes</label><br>
+  		<input type="radio" id="No" name="q" value="No">
+  		<label for="fNo">No</label><br>
+		</form> 
+		<br>
 		
-		What is your favorite fruit?<br>
+
+		<! QUESTION 4>
+		<h2> Question 4 </h2>
+		<h4> Is the placement of the search bar intuitive?</h4>
 		<select id="favorite">
-			<option value="Apples" selected="selected">Apples</option>
-			<option value="Oranges">Oranges</option>
-			<option value="Bananas">Bananas</option>
+			<option value="yes" selected="selected">I noticed it immediately</option>
+			<option value="sortof">It took me a few seconds to find it</option>
+			<option value="no">I was unable to find it within a minute</option>
 		</select>
-	</div>
-	
-	<br>
-	<br>
-		
-	Comments:<br>
+
+		<br>
+
+		<! QUESTION 5>
+		<h2> Question 5 </h2>
+<div class="wrap">
+  <form action="">
+    <label class="statement">How often would you consult this website?</label>
+    <ul class='likert'>
+      <li>
+        <input type="radio" name="likert" value="regularly">
+        <label>Regularly</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="often">
+        <label>Often</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="sometimes">
+        <label>Sometimes</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="rarely">
+        <label>Rarely</label>
+      </li>
+      <li>
+        <input type="radio" name="likert" value="never">
+        <label>Never</label>
+      </li>
+    </ul>
+
+    
+
+  </form>
+		<! QUESTION 6>
+		<h2> Question 6 </h2>		
+	<h3>Any extra comments?</h3>
 	<textarea rows="5" cols="30"></textarea>
-			
-	<br>
-	<br>
-			
-	<button id="submitButton" type="button" class="block">
-		SUBMIT your questionnaire
-	</button>
 		
-	<p id="signature">Site created by Caroline Barrière</p>	
+</div>
+	</div>
+
+			
+<!--<b>Funky Button <br><span>for your viewing pleasure</span></b>-->
+
+<section id="intro">
+
+  <div id="intro-content" class="center-content">
+
+    <div class="center-content-inner">
+
+      <div class="content-section content-section-margin">
+
+        <div class="content-section-grid clearfix">
+        
+        <a href="#" class="button nav-link">
+
+          <div class="bottom"></div>
+
+          <div class="top">
+
+          <div class="label">Submit Survey</div>
+            
+        		<div class="button-border button-border-left"></div>
+        	  <div class="button-border button-border-top"></div>
+        	  <div class="button-border button-border-right"></div>
+        		<div class="button-border button-border-bottom"></div>
+
+          </div>
+
+        	</a>
+
+        </div>
+
+       </div>
+
+      </div>
+
+     </div>
+
+  </section>
+		
+	<p id="signature">Site created by Kimberley Paradis as required by SEG3125 taken Summer 2020</p>	
 	
 	</form>
   </body>
-</html> 
+</html> file:///home/kimberleyparadis/Desktop/kimberley-paradis.github.io/kimberley-paradis.github.io/index.html#
