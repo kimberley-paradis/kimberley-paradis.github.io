@@ -64,95 +64,92 @@ body{
 .h1-dark .top .label {
     color: #fff;
 }
-
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
+body {
+	background-color: #333333;
 }
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-.column img:hover {
-  opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
-  position: relative;
-  display: none;
+	width: 950px;
+	height: 600px;
+	margin: 10px auto;
+	position: relative;
+	display: block;
+	padding: 0;
 }
 
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
+.container * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
-/* Closable button inside the image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-    column-gap: 40px;
-}
-table {
-  border-collapse: separate;
-  border-spacing: 50px 0;
+.container input {
+	display: none;
 }
 
-td {
-  padding: 10px 0;
+.slide-wrapper {
+	display: block;
 }
 
-.column {
-    column-gap: 40px;
-  float: center;
-  width: 33.33333333333%;
-  padding: 5px;
-  column-gap: 40px;
+.slide {
+	width: 100%;
+	height: 100%;
+	display: block;
+    position: absolute;
+
+    transform: scale(0);
+    transition: all .7s ease-in-out;
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.slide img {
+	width: 100%;
+	height: 100%;	
 }
 
-p {
-  color: #2acdc1;
+.nav label {
+	width: 200px;
+	text-align: center;
+	position: absolute;
+	z-index: 9;
+	height: 100%;
+	opacity: 0;
+	font-size: 5em;
+	line-height: 380px;
+	cursor: pointer;
+	color: white;
+	background-color: rgba(255,255,255,.5);
+	display: none;
+
+	transition: opacity .2s;
 }
 
-table {
-	border: 1px solid black;
-	background-color: #f1f1c1;
+.nav .next {
+	right: 0;
 }
-.row {
-  background-color: #020432;
-  color: white;
-  margin: 20px;
-  padding: 20px;
-  text-align: left;
+
+.slide:hover + .nav label { 
+	opacity: 0.5; 
 }
+
+.nav label:hover { 
+	opacity: 1; 
+}
+
+input:checked + .slide-wrapper .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-wrapper .nav label { 
+	display: block; 
+}
+
 /* Defining styling for a specific element type - each question */
 .question {
   background-color: #020432;

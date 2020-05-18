@@ -63,7 +63,7 @@ body {
 	<br>
 	<! Choose a website to evaluate >
 	<h2>What do you think of the UI in this <a href="http://www.newsoffuture.com/">News of the Future</a> site?</h2>	
-	<h3> (Click to enlarge)</h3>
+	<h3> (Hover cursor over picture to navigate back and forth)</h3>
 
 <head>
 <style>
@@ -91,28 +91,41 @@ div.desc {
 </style>
 </head>
 <body>
-<div class="row">
-  <div class="column">
-  <a target="_blank" href="rsz_fon_2025.jpg">
-    <img src="rsz_fon_2025.jpg" alt="FUture of News" width="600" height="400">
-  </a>
-  <div class="desc">Future of News Landing Page</div>
-</div>
+<div class="container">
+    
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <div class="slide-wrapper">
+      <div class="slide"><img src="rsz_fon_2025.jpg"></div>
 
-<div class="column">
-  <a target="_blank" href="NoF_china.jpg">
-    <img src="NoF_china.jpg" alt="China's Economy" width="600" height="400">
-  </a>
-  <div class="desc">Article on China's Economy </div>
-</div>
+      <div class="nav">
+        <label for="img-3" class="prev">&#x2039;</label>
+        <label for="img-2" class="next">&#x203a;</label>
+      </div>
+    </div>
 
+    <input type="radio" name="radio-btn" id="img-2" />
+    <div class="slide-wrapper">
+      <div class="slide"><img src="NoF_china.jpg"></div>
 
-<div class="column">
-  <a target="_blank" href="NoF_survey.jpg">
-    <img src="NoF_survey.jpg" alt="Survey" width="600" height="400">
-  </a>
-  <div class="desc">Website Survey</div>
-</div>
+      <div class="nav">
+        <label for="img-1" class="prev">&#x2039;</label>
+        <label for="img-3" class="next">&#x203a;</label>
+      </div>
+    </div>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <div class="slide-wrapper">
+      <div class="slide"><img src="NoF_survey.jpg"></div>
+
+      <div class="nav">
+        <label for="img-2" class="prev">&#x2039;</label>
+        <label for="img-1" class="next">&#x203a;</label>
+      </div>
+    </div>
+
+ 
+  </div>
+
 
 </body>
 </div>
