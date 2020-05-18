@@ -3,11 +3,15 @@
    color picker www.w3schools.com/colors/colors_picker.asp
 */
 
-html {
-  background-color: white;
+body{ 
+  background-color: coral;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
  
-body {
+/*body {
   background-color: powderblue;
   width: 600px;
   border: 2px solid black;
@@ -20,49 +24,382 @@ h1 {
 	text-align: center;
 	margin: 0;
 	padding: 20px 0;
-	color: #ff00ff;  /* Fuchsia */
-	text-shadow: 3px 3px 1px black;
+	color: #ff00ff;
+	
+}*/
+.h1 {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+
+    margin-top: 100px;
+    margin-left: 40%
+
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  align: center;
+.h1 .bottom {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #2acdc1;
+    display: block;
+}
+
+.h1 .top {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px 34px 22px 34px;
+    border: 2px solid #04049d;
+}
+
+.h1-dark .top {
+    border: 2px solid #fff;
+}
+
+.h1 .top .label {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #04049d;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    text-align: right;
+    text-transform: uppercase;
+
+}
+
+.h1-dark .top .label {
+    color: #fff;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 p {
-  color: red;
+  color: #2acdc1;
 }
 
 table {
 	border: 1px solid black;
 	background-color: #f1f1c1;
 }
-
-/* Defining styling for a specific element type - each question */
-.question {
-  background-color: black;
+.row {
+  background-color: #020432;
   color: white;
   margin: 20px;
   padding: 20px;
+  text-align: left;
+}
+/* Defining styling for a specific element type - each question */
+.question {
+  background-color: #020432;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+}
+html,body {padding:0;margin:0;}
+.wrap {
+  font:12px Arial, san-serif;
+}
+h1.likert-header {
+  padding-left:4.25%;
+  margin:20px 0 0;
+}
+form .statement {
+  display:block;
+  font-size: 14px;
+  font-weight: bold;
+  /*padding: 30px 0 0 4.25%;*/
+  margin-bottom:10px;
+}
+form .likert {
+  list-style:none;
+  width:100%;
+  margin:0;
+  padding:0 0 35px;
+  display:block;
+  border-bottom:2px solid #efefef;
+}
+/*THIS PART*/
+form .likert:last-of-type {border-bottom:0;}
+form .likert:before {
+  content: '';
+  position:relative;
+  top:11px;
+  left:0;
+  display:block;
+  background-color:#efefef;
+  height:4px;
+  width:77%;
+}
+form .likert li {
+  display:inline-block;
+  width:19%;
+  text-align:left;
+  vertical-align: top;
+}
+form .likert li input[type=radio] {
+  display:block;
+  position:relative;
+  top:0;
+  left:0;
+  margin-left:-6px;
+  
+}
+form .likert li label {width:100%;}
+form .buttons {
+  margin:30px 0;
+  padding:0 4.25%;
+  text-align:right
+} 
+form .buttons button {
+  padding: 5px 10px;
+  background-color: #67ab49;
+  border: 0;
+  border-radius: 3px;
 }
 
-/* Defining styling for a specific element type - large block buttons */
+
+/* Defining styling for a specific element type - large block buttons
 .block {
   display: block;
   width: 100%;
   border: none;
-  background-color: #ffff66;  /* yellow */
+  background-color: #ffff66;  /* yellow 
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
+}*/
+
+html {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+*,*:before,*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+b {
+  position: relative;
+  display: block;
+  font-family: helvetica neue, helvetica, sans-serif;
+  line-height: 1.15em;
+  margin-top: -1.15em;
+  top: 2.3em;
+  font-size: 0.67em;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  opacity: 0.75;
+  text-align: center;
+}
+
+b span {
+  font-size: 0.785em;
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+#intro {
+  width: 200px;
+  margin: 100px auto 0;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 40px;
+}
+
+.button .bottom {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 100%;
+    height: 100%;
+    background-color: #2acdc1;
+    display: block;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.button .top {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px 34px 22px 34px;
+    border: 2px solid #04049d;
+}
+
+.button-dark .top {
+    border: 2px solid #fff;
+}
+
+.button .top .label {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #04049d;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.button-dark .top .label {
+    color: #fff;
+}
+
+.button:hover .bottom {
+    left: 0;
+    top: 0;
+    background-color: #f3f3f3;
+}
+
+.button:hover .top .label {
+    color: #2acdc1;
+}
+
+.button-border {
+    position: absolute;
+    background-color: #2acdc1;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.button:hover .top .button-border-left,.button:hover .top .button-border-right {
+    height: calc(100% + 2px);
+}
+
+.button:hover .top .button-border-top,.button:hover .top .button-border-bottom {
+    width: calc(100% + 2px);
+}
+
+.button-border-left {
+    left: -2px;
+    bottom: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-top {
+    left: -2px;
+    top: -2px;
+    width: 0;
+    height: 2px;
+}
+
+.button-border-right {
+    right: -2px;
+    top: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-bottom {
+    right: -2px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+}
+
 
 /* Defining styling for a specific element with an id */
 #signature {
   text-align: right;
-  color: red;
+  color: #36454f;
   font-style: italic;
   font-size: 75%;
 }
