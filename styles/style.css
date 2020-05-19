@@ -4,17 +4,26 @@
 */
 
 body{ 
-  background-color: coral;
+  color: coral;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #020432;
+  color: #ffff;
 }
- 
-.body {
-    color: #020432;
+.subtitle {
+  background-color: #020432;
+  color: white;
+  margin-right: 20%;
+  margin-left: 20%;
+  padding: 15px;
+  text-align: center;
 }
+
+a {
+  color: #ADD8E6;
+}
+
 .h1 {
     display: inline-block;
     text-decoration: none;
@@ -31,7 +40,7 @@ body{
     top: 10px;
     width: 100%;
     height: 100%;
-    background-color: #2acdc1;
+    background-color:#2acdc1;
     display: block;
 }
 
@@ -71,10 +80,13 @@ body {
 .container {
 	width: 950px;
 	height: 600px;
-	margin: 10px auto;
+	margin: 20px auto;
 	position: relative;
 	display: block;
 	padding: 0;
+           padding:1px;
+   border:5px solid #021a40;
+
 }
 
 .container * {
@@ -154,7 +166,7 @@ input:checked + .slide-wrapper .nav label {
 .question {
   background-color: #020432;
   color: white;
-  margin: 20px;
+  margin: 40px;
   padding: 20px;
   text-align: left;
 }
@@ -288,6 +300,7 @@ b span {
     text-decoration: none;
     position: relative;
     margin-top: 40px;
+    left: 45%;
 }
 
 .button .bottom {
@@ -396,7 +409,7 @@ b span {
 /* Defining styling for a specific element with an id */
 #signature {
   text-align: right;
-  color: #36454f;
+  color: #ffffff ;
   font-style: italic;
   font-size: 75%;
 }
