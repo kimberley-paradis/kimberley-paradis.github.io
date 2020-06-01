@@ -1,10 +1,19 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+.title {
+      font-size: 50px;
+}
+.instructions {
+        font-size: 20px;
+}
 
 /* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+}
+.preferences {
+  display: inline-block;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -16,6 +25,7 @@
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+font-size:35px;
 }
 
 /* Change background color of buttons on hover */
@@ -34,4 +44,5 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+font-size:25px;
 }
