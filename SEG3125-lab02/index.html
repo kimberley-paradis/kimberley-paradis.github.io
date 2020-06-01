@@ -2,18 +2,33 @@
 <html>
 <head>
 	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
-	<link href="styles/style.css" rel="stylesheet" type="text/css">
-<div class="title">
-       Pete's Fresh Market
-<br>
-<br>
-</div>
-<div class="instructions">
-Please click on the Client tab to begin
-</div>
+	<link href="../SEG3125-lab02/styles/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+    <div class="banner">
+        <div
+          style="
+            text-align: center;
+            font-size: 40px;
+						color: #fff;
+            padding-top: 60px;
+          "
+        >
+          Kim's Fresh Market <br />
+        </div>
+        <div
+          style="
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            padding-top: 20px;
+          "
+        >
+          Move through the tabs below from left to right to shop for your
+          groceries!
+        </div>
+      </div>
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
@@ -24,37 +39,29 @@ Please click on the Client tab to begin
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
-  <h3>Client Information</h3>
-  <p>Tell us a bit about you.</p>
-
-<input type="checkbox" lass= "preferences" name="Option" value="lactoseintolerant">Lactose Intolerant<br>
-		<input type="checkbox" class= "preferences" name="Option" value="diabetic">Diabetic<br>
-
-	<h4>*Choose a Category:</h4>
-<form id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-<input type="checkbox" name="Option" value="Vegetarian">Vegetarian<br>
-		<input type="checkbox" name="Option" value="GlutenFree">Gluten-Free<br>
-		<input type="checkbox" name="Option" value="None">None<br>
-	</form>
-<h4> *Do you wish to purchse only organic food?</h4>
-<form id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
- 		 <input type="radio" id="Yes" name="q" value="Yes">
- 		 <label for="male">Yes</label><br>
-  		<input type="radio" id="No" name="q" value="No">
-  		<label for="fNo">No</label><br>
-		</form> 
-		<br>
-<br>
-<br>
-<h7> * Indicates mandatory question</h7>
+  <h3>Please enter your client information below</h3>
+  <p>Select your dietary restrictions</p>
+	Choose a Category:
+	<br>
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')" multiple>
+	  <option value="Vegetarian">Vegetarian</option>
+    <option value="GlutenFree">GlutenFree</option>
+    <option value="Organic">Organic</option>
+    <option value="None">None</option>
+	</select>
+	<br>
+	<br>
+	*Hold down the Control (Windows) or Command (mac) buttons to select multiple dietary restrictions
 </div>
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
   <p>We preselected products based on your restrictions.</p>
 	 Choose items to buy:
+	 <br>
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+
 		Add selected items to cart.
 	</button>
 </div>
@@ -67,10 +74,17 @@ Please click on the Client tab to begin
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>
-<br>
-<br>
-<br>
-<p id="signature">Site created by Kimberley Paradis as required by SEG3125 taken Summer 2020</p>	
+
+
 
 </body>
+
+<div class="footer">
+  <footer>
+    <i>
+      Website designed by Kimberley Paradis as submission for Lab02 of SEG3125
+    </i>
+  </footer>
+</div>
+
 </html>

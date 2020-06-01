@@ -1,4 +1,3 @@
-
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
@@ -25,7 +24,7 @@ function openInfo(evt, tabName) {
 
 	
 // generate a checkbox list from a list of products
-// it makes each product name as the label for the checkbox
+// it makes each product name as the label for the checkbos
 
 function populateListProductChoices(slct1, slct2) {
     var s1 = document.getElementById(slct1);
@@ -91,4 +90,3 @@ function selectedItems(){
 	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
 		
 }
-
