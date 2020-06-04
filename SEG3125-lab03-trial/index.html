@@ -1,0 +1,81 @@
+<div id="store">
+  
+  <navigation>
+    
+    <!-- header -->
+    <h1>SHOP</h1>
+    
+    <!-- filter / cart bar -->
+    <ul>
+      <li v-on:click="filter=false">All</li>
+      <li v-on:click="filter='Accessory'">Accessories</li>
+      <li v-on:click="filter='Footwear'">Footwear</li>
+      <li class="cart" v-on:click="cart.show = true">
+        <span v-if="cart.products.length">
+          {{ cart.products.length }} items in Cart<br />
+          &pound;{{ cart.total.toFixed(2) }}
+        </span>  
+        <span v-else>Cart is empty</span>
+      </li>
+    </ul>
+  </navigation>
+  
+  <!-- cart -->
+  <div id="cart-popup" v-if="cart.show">
+    <div class="contents">
+      <h1>Your Cart</h1>
+      
+      <cart-item
+      v-for="item in cart.products"
+      v-bind:product="item"
+      v-bind:title="item.title"
+      v-bind:price="item.price"
+      v-bind:key="item.id"
+      ></cart-item>
+      
+      <p><strong>
+        Total: &pound;{{ cart.total.toFixed(2) }}
+       </strong></p>
+      
+      <input type="submit" value="checkout" />
+      <input type="submit" value="Empty Cart" v-on:click="cart.products = []" />
+      <div class="close" v-on:click="cart.show = false">x</div> 
+    </div>
+  </div> 
+  
+  <!-- product list -->
+  <div id="products">
+    <product-item
+      v-for="item in products"
+      v-bind:product="item"
+      v-bind:title="item.title"
+      v-bind:price="item.price"
+      v-bind:category="item.category"
+      v-bind:key="item.id"
+      v-bind:img="item.img"
+      v-if="item.category==filter || !filter"
+    ></product-item>
+  </div>
+  
+  <!-- footer -->
+  <div id="footer">Cart demo by Veasey</div>
+</div>
+
+<!-- product item -->
+<script type="text/x-template" id="product-item-template">
+	<div class="product-card" v-on:click="addToCart(product.id)" >
+    <div class="title">{{ product.title }}</div>
+    <div class="img">{{ product.img }}</div>
+    <div>{{ product.price.toFixed(2) }}</div>
+	</div>
+</script>
+
+<!-- cart item -->
+<script type="text/x-template" id="cart-item-template">
+	<div class="cart-item">
+		<div class="title">
+      {{ product.title }} 
+      &pound;{{ product.price.toFixed(2) }}
+    </div>
+	</div>
+</script>

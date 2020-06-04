@@ -7,66 +7,42 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 1.99,
-		fruitsveggies: true,
-		dairy: false,
-		meat: false,
-		grains: false
+		price: 1.99
 	},
 	{
 		name: "Almonds - $2.75",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 2.75,
-		fruitsveggies: false,
-		dairy: false,
-		meat: true,
-		grains: false
+		price: 2.75
 	},
 	{
 		name: "Brocoli - $2.99",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 2.99,
-		fruitsveggies: true,
-		dairy: false,
-		meat: false,
-		grains: false
+		price: 2.99
 	},
 	{
 		name: "Pretzel - $3.35",
 		vegetarian: true,
 		glutenFree: false,
 		organic: true,
-		price: 3.35,
-		fruitsveggies: false,
-		dairy: false,
-		meat: false,
-		grains: true
+		price: 3.35
 	},
 	{
 		name: "Almond Milk - $4.89",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 4.89,
-		fruitsveggies: false,
-		dairy: false,
-		meat: true,
-		grains: false
+		price: 4.89
 	},
 	{
 		name: "Cinnamon Buns - $5.00 ",
 		vegetarian: true,
 		glutenFree: false,
 		organic: true,
-		price: 5.00,
-		fruitsveggies: false,
-		dairy: false,
-		meat: false,
-		grains: true
+		price: 5.00
 	},
 	{
 		name: "Muscles - $10.00",
@@ -78,7 +54,7 @@ var products = [
 
 	{
 		name: "Birthday Cake - $13.00",
-		vegetarian: false,
+		vegetarian: true,
 		glutenFree: false,
 		organic: false,
 		price: 13.00

@@ -25,7 +25,7 @@
             padding-top: 20px;
           "
         >
-          Please click on the "Client Information" tab to begin
+          <h3> Please click on the Client tab to begin</h3>
         </div>
       </div>
 
@@ -36,12 +36,11 @@
   <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
 </div>
 
-
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
   <h3>Please enter your client information below</h3>
-	Please select your dietary restrictions and/or preferences:
-	<br>
+  <p>Select your dietary restrictions</p>
+	Choose a Category:
 	<br>
 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')" multiple>
 	  <option value="Vegetarian">Vegetarian</option>
@@ -49,36 +48,26 @@
     <option value="Organic">Organic</option>
     <option value="None">None</option>
 	</select>
-
+	<br>
+	<br>
+	*Hold down the Control (Windows) or Command (mac) buttons to select multiple dietary restrictions
 </div>
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
-	Select any filters:
-	<br>
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')" multiple>
-	 <option value="fruitsveggies">Fruits & Vegetables</option>
-		<option value="dairy">Dairy</option>
-		<option value="meat">Meat</option>
-		<option value="grains">Grains</option>
-	</select>
-	<br>
-	<br>
-	<br>
-	 Please select items to add to cart:
-	 <br>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
 	 <br>
 	 <div id="displayProduct"></div>
-	 <br>
-	 <br>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+
 		Add selected items to cart.
 	</button>
 </div>
 
 <div id="Cart" class="tabcontent">
   <h3>Cart</h3>
-  <p>Here are the contents of your shopping cart.</p>
+  <p>Here is your cart.</p>
   <div id="displayCart"></div>
 </div>
 
@@ -92,7 +81,7 @@
 <div class="footer">
   <footer>
     <i>
-      Website designed by Kimberley Paradis as submission for Lab03 of SEG3125
+      Website designed by Kimberley Paradis as submission for Lab02 of SEG3125
     </i>
   </footer>
 </div>
