@@ -2,10 +2,11 @@
 <html>
 <head>
 	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
-	<link href="../SEG3125-lab02/styles/styles.css" rel="stylesheet" type="text/css">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Kim's Fresh Market</title>
 </head>
-
 <body>
+	<body>
     <div class="banner">
         <div
           style="
@@ -13,9 +14,12 @@
             font-size: 40px;
 						color: #fff;
             padding-top: 60px;
+						background-color: green;
           "
         >
           Kim's Fresh Market <br />
+					<br>
+
         </div>
         <div
           style="
@@ -23,72 +27,72 @@
             color: #fff;
             font-size: 20px;
             padding-top: 20px;
+						background-color: green;
           "
         >
-          Please click on the "Client Information" tab to begin
         </div>
       </div>
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+  <button class="tablinks" onclick="openInfo(event, 'Client'); tabColour(0);">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products'); tabColour(1);">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart'); tabColour(2);">Cart</button>
 </div>
-
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
-  <h3>Please enter your client information below</h3>
-	Please select your dietary restrictions and/or preferences:
-	<br>
-	<br>
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')" multiple>
-	  <option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-    <option value="Organic">Organic</option>
-    <option value="None">None</option>
-	</select>
 
+	<h3>Customer information</h3>
+	Please select any dietary restrictions or preferences:<br>
+
+	<input type="checkbox" id="filter1" name="filter1" value="Vegetarian">
+	<label for="filter1">Vegetarian</label><br>
+	<input type="checkbox" id="filter2" name="filter2" value="Gluten-free">
+  	<label for="filter2">Gluten-free</label><br>
+  	<input type="checkbox" id="filter3" name="filter3" value="Organic">
+  	<label for="filter3">Organic</label><br>
+		<input type="checkbox" id="filter4" name="filter4" value="None">
+  	<label for="filter4">None</label><br>
+		<br>
+		<br>
+	<button id="applyFilters" onclick="start()">Apply filters</button><br><br><br><br><br><br><br><br><br><br>
 </div>
 
 <div id="Products" class="tabcontent">
-  <h3>Your targeted products</h3>
-	Select any filters:
-	<br>
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')" multiple>
-	 <option value="fruitsveggies">Fruits & Vegetables</option>
-		<option value="dairy">Dairy</option>
-		<option value="meat">Meat</option>
-		<option value="grains">Grains</option>
-	</select>
-	<br>
-	<br>
-	<br>
-	 Please select items to add to cart:
-	 <br>
-	 <br>
-	 <div id="displayProduct"></div>
-	 <br>
-	 <br>
-	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
-		Add selected items to cart.
-	</button>
+	<h3>Available Items</h3>
+	<p>Selections based on dietary restrictions or preferences</p>
+
+	<div id="div1"></div>
+	Food Category:
+	<select id="categorySelect" name="categorySelect" onchange="applyFilters()">
+	<option value="">(Please make a selection)</option>
+	<option value="all">All</option>
+	<option value="fruitsveggies">Fruits & Vegetables</option>
+	<option value="dairy">Dairy</option>
+	<option value="meat">Meat & By-Products</option>
+	<option value="grains">Grains</option>
+	</select><br><br>
+
+	Select Items:<br>
+	<div id="displayProduct"></div>
+	<button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add items to cart
+	</button><br><br><br><br><br><br><br><br><br><br>
 </div>
 
 <div id="Cart" class="tabcontent">
-  <h3>Cart</h3>
-  <p>Here are the contents of your shopping cart.</p>
-  <div id="displayCart"></div>
+	<h3>Shopping cart</h3>
+	<div id="displayCart"></div>
+	<button id="order" type="button" class="block" onclick="window.location.reload()">
+		Purchase Selected Items
+	</button><br><br><br><br><br><br><br><br><br><br>
 </div>
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>
 
-
-
 </body>
-
 <div class="footer">
   <footer>
     <i>
@@ -96,5 +100,4 @@
     </i>
   </footer>
 </div>
-
 </html>
