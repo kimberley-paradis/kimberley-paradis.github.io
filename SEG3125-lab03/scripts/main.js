@@ -70,7 +70,7 @@ function populateListProductChoices(slct1, slct2, category) {
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
 		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName + " ($" + priceArray[i] + ")"));
+		label.appendChild(document.createTextNode(productName + " - $" + priceArray[i]));
 		s2.appendChild(label);
 
 		// create thumbnail for the checkbox
@@ -110,7 +110,7 @@ function selectedItems(){
 
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
+	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
 	openInfo(event, 'Cart');
 	tabColour(2);
 }
