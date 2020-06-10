@@ -1,0 +1,246 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Kim's Hair Salon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+    <!-- A different approach would be to make the whole staff information collapsible -->
+    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
+    <!-- Here a single card is used, but card columns could be used -->
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+
+
+  <!--Code retrieved from https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Kim's Hair Salon</h1>
+        <p>100 Daly Ave, Ottawa, ON K1N 6G7</p>
+
+      </div>
+    </div>
+<h3>Meet the team</h3>
+  <!--Code retrieved from https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+  <!--Accordion wrapper-->
+<div class="accordion md-accordion accordion-1" id="accordionEx23" role="tablist">
+  <div class="card">
+    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading96">
+      <h5 class="text-uppercase mb-0 py-1">
+        <a class="white-text font-weight-bold" data-toggle="collapse" href="#collapse96" aria-expanded="false"
+          aria-controls="collapse96">
+          Annie - Owner
+        </a>
+      </h5>
+    </div>
+    <div id="collapse96" class="collapse" role="tabpanel" aria-labelledby="heading96"
+      data-parent="#accordionEx23">
+      <div class="card-body">
+        <div class="row my-4">
+          <div class="col-md-8">
+            <h2 class="font-weight-bold mb-3 black-text">Annie Vasquez</h2>
+            <p class="">Annie has been the owner of this salon for over 20 years.</p>
+            <p class="mb-0">She offeres her services in hairstyling and coloring. </p>
+          </div>
+          <div class="col-md-4 mt-3 pt-2">
+            <div class="view z-depth-1">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading97">
+      <h5 class="text-uppercase mb-0 py-1">
+        <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapse97"
+          aria-expanded="false" aria-controls="collapse97">
+          Ramsey - Colorist
+        </a>
+      </h5>
+    </div>
+    <div id="collapse97" class="collapse" role="tabpanel" aria-labelledby="heading97"
+      data-parent="#accordionEx23">
+      <div class="card-body">
+        <div class="row my-4">
+          <div class="col-md-8">
+            <h2 class="font-weight-bold mb-3 black-text">Ramsey Cole</h2>
+            <p class="">Ramsey has been in the industry for 15 years as a master hair colorist.</p>
+            <p class="mb-0">His specialties include pastels and bring colors.</p>
+          </div>
+          <div class="col-md-4 mt-3 pt-2">
+            <div class="view z-depth-1">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading98">
+      <h5 class="text-uppercase mb-0 py-1">
+        <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapse98"
+          aria-expanded="false" aria-controls="collapse98">
+         Chelsea - Colorist
+        </a>
+      </h5>
+    </div>
+    <div id="collapse98" class="collapse" role="tabpanel" aria-labelledby="heading98"
+      data-parent="#accordionEx23">
+      <div class="card-body">
+        <div class="row my-4">
+          <div class="col-md-8">
+            <h2 class="font-weight-bold mb-3 black-text">Chelseay Nguyen</h2>
+            <p class="">Chelsea graduated from beauty school in 20008. SHe has been working at Kim's Hair Salon since 2014.</p>
+            <p class="mb-0">She speacializes in curly hair and long cuts.</p>
+          </div>
+          <div class="col-md-4 mt-3 pt-2">
+            <div class="view z-depth-1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!--Accordion wrapper-->
+<h3>Services</h3>
+  <!--Code retrieved from https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+  <!--Accordion wrapper-->
+<div class="accordion md-accordion accordion-1" id="accordionEx27" role="tablist">
+  <div class="card">
+    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading96">
+      <h5 class="text-uppercase mb-0 py-1">
+        <a class="white-text font-weight-bold" data-toggle="collapse" href="#collapse99" aria-expanded="false"
+          aria-controls="collapse96">
+          Prices
+        </a>
+      </h5>
+    </div>
+    <div id="collapse99" class="collapse" role="tabpanel" aria-labelledby="heading99"
+      data-parent="#accordionEx23">
+      <div class="card-body">
+        <div class="row my-4">
+          <div class="col-md-8">
+
+            <p class="">Haircut: $60 - $90 (depending on length)</p>
+            <p class="">Highlights: $90 - $130 (depending on length)</p>
+                        <p class="">Foils: $100 - $160 (depending on length)</p>
+
+          <div class="col-md-4 mt-3 pt-2">
+            <div class="view z-depth-1">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+</div>
+	<h3>Book an appointment</h3>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                  <h5 class="text-uppercase mb-0 py-1"
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </h5>
+              </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Please specify which service you would like to book</p>
+			<label>
+				<input type="radio" name="service" value="haircut">
+  				<img src="images/hair-1424731-638x423.jpg" width="500" height="350">
+          <p> Haircut</p>
+			</label>
+			<label>
+		  		<input type="radio" name="service" value="highlight">
+  				<img src="images/Webp.net-resizeimage (2).jpg"width="500" height="350">
+          <p> Highlights</p>
+			</label>
+			<label>
+		  		<input type="radio" name="service" value="foils">
+  				<img src="images/foil.jpg"width="500" height="350">
+          <p> Hair Foils</p>
+			</label>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                  <h5 class="text-uppercase mb-0 py-1"
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose an appointment time</a>
+                  </h5>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Please specify which time works best for you</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">MM/DD/YYYY hh:mm</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                  <h5 class="text-uppercase mb-0 py-1"
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                  </h5>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Please leave us with your information.</p>
+			Full name: <input type="text" id="fname" name="fname" placeholder="First name"> <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
+                        Phone number: <input type="tel" id="phone" name="phone" placeholder="(541) 754-3010" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+			Email address: <input type="text" id="email" name="email" placeholder="vanilla.ice@email.com"><br><br>
+			<button type="button" class="btn btn-success">Book appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<br><br><br>
+	<div class="footer">
+  		<p class="text-success">Website designed by Kimberley Paradis for SEG3125 Lab 04</p>
+	</div>
+</body>
+</html>
+
+<!--
+Images used:
+Photo by <a href="/photographer/Gerbera-42451">Gerla Brakkee</a> from <a href="https://freeimages.com/">FreeImages</a>
+Photo by <a href="/photographer/deziner02-43515">Angel Norris</a> from <a href="https://freeimages.com/">FreeImages</a>
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lorealparisusa.com%2Fbeauty-magazine%2Fhair-color%2Fhair-color-application%2Fhighlights-hair-foils-foilayage-balayage.aspx&psig=AOvVaw2vIquowck0ZqNDX0LJ-Jle&ust=1591847954674000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjWhvGt9ukCFQAAAAAdAAAAABAD
