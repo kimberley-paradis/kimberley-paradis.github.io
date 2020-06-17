@@ -1,0 +1,368 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Kim's Hair Salon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+    <!-- A different approach would be to make the whole staff information collapsible -->
+    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
+    <!-- Here a single card is used, but card columns could be used -->
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+
+
+  <!--Code retrieved from https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+  <div class="topnav">
+    <a class="active" href="#accordionEx23">Team</a>
+    <a href="#accordionEx27">Services</a>
+    <a href="collapseService">Book Appointment</a>
+
+  </div>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Kim's Hair Salon</h1>
+        <b>100 Daly Ave, Ottawa, ON K1N 6G7</b>
+
+      </div>
+    </div>
+<h3>Meet the team</h3>
+  <!--Code retrieved from https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+  <!--Accordion wrapper-->
+<div class="accordion md-accordion accordion-1" id="accordionEx23" role="tablist">
+  <div class="card">
+    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading96">
+      <h5 class="text-uppercase mb-0 py-1">
+        <a class="white-text font-weight-bold" data-toggle="collapse" href="#collapse96" aria-expanded="false"
+          aria-controls="collapse96">
+          <img src="images/two.png" width="40" height="40"> Annie - Owner
+        </a>
+      </h5>
+    </div>
+    <div id="collapse96" class="collapse" role="tabpanel" aria-labelledby="heading96"
+      data-parent="#accordionEx23">
+      <div class="card-body">
+        <div class="row my-4">
+          <div class="col-md-8">
+            <h2 class="font-weight-bold mb-3 black-text">Annie Vasquez</h2>
+            <p class="">Annie has been the owner of this salon for over 20 years.</p>
+            <p class="mb-0">She offeres her services in hairstyling and coloring. </p>
+            <div style="text-align: left">
+            <img src="images/annie.jpg" align="left" width="300" height="350"/>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3 pt-2">
+            <div class="view z-depth-1">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading97">
+      <h5 class="text-uppercase mb-0 py-1">
+        <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapse97"
+          aria-expanded="false" aria-controls="collapse97">
+          <img src="images/two.png" width="40" height="40"> Ramsey - Colorist
+        </a>
+      </h5>
+    </div>
+    <div id="collapse97" class="collapse" role="tabpanel" aria-labelledby="heading97"
+      data-parent="#accordionEx23">
+      <div class="card-body">
+        <div class="row my-4">
+          <div class="col-md-8">
+            <h2 class="font-weight-bold mb-3 black-text">Ramsey Cole</h2>
+            <p class="">Ramsey has been in the industry for 15 years as a master hair colorist.</p>
+            <p class="mb-0">His specialties include pastels and bring colors.</p>
+              <img src="images/ramsey.jpg" align="left" width="300" height="350"/>
+          </div>
+          <div class="col-md-4 mt-3 pt-2">
+            <div class="view z-depth-1">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading98">
+      <h5 class="text-uppercase mb-0 py-1">
+        <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapse98"
+          aria-expanded="false" aria-controls="collapse98">
+         <img src="images/two.png" width="40" height="40"> Chelsea - Stylist
+        </a>
+      </h5>
+    </div>
+    <div id="collapse98" class="collapse" role="tabpanel" aria-labelledby="heading98"
+      data-parent="#accordionEx23">
+      <div class="card-body">
+        <div class="row my-4">
+          <div class="col-md-8">
+            <h2 class="font-weight-bold mb-3 black-text">Chelseay Nguyen</h2>
+            <p class="">Chelsea graduated from beauty school in 20008. SHe has been working at Kim's Hair Salon since 2014.</p>
+            <p class="mb-0">She speacializes in curly hair and long cuts.</p>
+            <img src="images/chelsea.jpg" align="left" width="300" height="350"/>
+          </div>
+          <div class="col-md-4 mt-3 pt-2">
+            <div class="view z-depth-1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!--Accordion wrapper-->
+<h3>Services</h3>
+  <!--Code retrieved from https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+  <!--Accordion wrapper-->
+<div class="accordion md-accordion accordion-1" id="accordionEx27" role="tablist">
+  <div class="card">
+    <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading96">
+      <h5 class="text-uppercase mb-0 py-1">
+        <a class="white-text font-weight-bold" data-toggle="collapse" href="#collapse99" aria-expanded="false"
+          aria-controls="collapse96">
+          <img src="images/money.png" width="40" height="40"> Prices
+        </a>
+      </h5>
+    </div>
+    <div id="collapse99" class="collapse" role="tabpanel" aria-labelledby="heading99"
+      data-parent="#accordionEx23">
+      <div class="card-body">
+        <div class="row my-4">
+          <div class="col-md-8">
+
+            <p class="">Haircut: $60 - $90 (depending on length)</p>
+            <p class="">Highlights: $90 - $130 (depending on length)</p>
+                        <p class="">Foils: $100 - $160 (depending on length)</p>
+
+          <div class="col-md-4 mt-3 pt-2">
+            <div class="view z-depth-1">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+</div>
+	<h3>Book an appointment</h3>
+  <form name="myForm" onsubmit="return validateForm()" method="post">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                  <h5 class="text-uppercase mb-0 py-1"
+                    <a class="card-link" data-toggle="collapse" href="#collapseService"><img src="images/stopwatch.png" width="40" height="40"> Book </a>
+                </h5>
+              </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Please specify which service you would like to book</p>
+                        <form name="myForm" onsubmit="return validateForm()" method="post">
+                      	<div class="container" id="service">
+                                      <h4><img src="images/haircut.png" alt="logo" style="width:30px;"> Service</h4>
+                      			<p>Please specify which of our services you require.</p>
+                      			<label>
+                      				<input type="radio" name="service" value="haircut">
+                        				<img src="images/hair-1424731-638x423.jpg"width="100" height="100">
+<h6>Haircut</h6>
+                          	</label>
+                      			<label>
+                      		  		<input type="radio" name="service" value="highlight">
+                        				<img src="images/hair-1194024-639x578.jpg" width="100" height="100">
+                                <h6>Highlights</h6>
+                      			</label>
+                      			<label>
+                      		  		<input type="radio" name="service" value="foil">
+                        				<img src="images/foil.jpg"width="100" height="100">
+                                <h6>Foils</h6>
+                      			</label><br>
+                      			<w id="serviceError"></w>
+                      	</div>
+                        <br>
+                      	<div class="container" id="staff">
+                                      <h4><img src="images/two.png" alt="logo" style="width:30px;"> Stylist</h4>
+                      			<p>Please select your preffered stylist</p>
+                      			<p>Which stylist do you prefer?
+                      				<select id="stylist" name="stylist" title="This will update appointment availability in the calendar below.">
+
+                        					<option value="annie">Annie (Unavailable Tuesday)</option>
+                        					<option value="ramsey">Ramsey (Unavailable Wednesday)</option>
+                        					<option value="chelsea">Chelsea (Unavailable Monday)</option>
+                                  <option value="none">(No Preference)</option>
+                      				</select>
+                      			</p>
+
+                      	</div>
+                        <br>
+                      	<div class="container" id="appointment">
+                                      <h4><img src="images/clock.png" alt="logo" style="width:30px;"> Choose an appointment time</h4>
+                      		<p>Please specify when you would like your appointment. We're open Mon-Fri.</p>
+                                      <!-- Bootstrap has various input components. Some examples are given here: -->
+                                      <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                      		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                        		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                        		<script>
+                      		$( function() {
+                          			$( "#datepicker" ).datepicker({
+                                  			beforeShowDay: function(date) {
+                              				var day = date.getDay();
+                      					var daysOff = (day != 0) && (day != 6);
+                      					if(document.getElementById("stylist").value == "annie"){
+                      						daysOff = daysOff && (day != 2);
+                      					}
+                      					if(document.getElementById("stylist").value == "ramsey"){
+                      						daysOff = daysOff && (day != 3);
+                      					}
+                      					if(document.getElementById("stylist").value == "chelsea"){
+                      						daysOff = daysOff && (day != 1);
+                      						}
+
+                      					return [daysOff];
+                          				}
+                              		});
+                        		} );
+                        		</script>
+
+                      		<p>Date: <input type="text" id="datepicker" placeholder="MM/DD/YY" title="Please select a date."> Time: <input type="time" id="time" name="time" title="Please select a time."><w id="dateError"><w></p>
+                      	</div>
+                        <br>
+                      	<div class="container" id="info">
+                                      <h4><img src="images/info.png" alt="logo" style="width:30px;"> Provide your info</h4>
+                      			<p>Please leave us with your personal information.</p>
+                      			Full name: <input type="text" id="fname" name="fname" placeholder="First name" title="If credit card info provided below, must match name on card."><input type="text" id="lname" name="lname" placeholder="Last name" title="If credit card info provided below, name must match on card."><w id="nameError"></w><br>
+                                              Phone number: <input type="tel" id="phone" name="phone" placeholder="XXXXXXXXXX" title="Only numbers accepted. (eg: 5417543010)"><w id="phoneError"></w><br>
+                      			Email address: <input type="text" id="email" name="email" placeholder="username@domain.com" title="(eg: vanilla.ice@email.com)"><w id="emailError"></w><br><br>
+                      			<p>Please provide your credit card information to guarantee your service appointment.</p>
+                      			Credit card number: <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXXXXXXXXXXXXXX" title="Name on card must match full name provided above. A $25 charge applies for missed appointments. Only numbers accepted.(eg: 1234567890123456)"><w id="cardError"></w><br>
+                      			Expiry date: <input type="text" id="expiry" name="expiry" placeholder="MMYY" title="Located beneath the credit card number. Only numbers accepted. (eg: 0520)"><w id="expiryError"></w><br>
+                      			CVV: <input type="text" id="cvv" name="cvv" placeholder="XXX" title="Located on the back of the credit card. Only numbers accepted. (eg: 123)"><w id="cvvError"></w><br><br>
+                      			<button type="button" class="btn btn-success" onclick="validateForm()">Book appointment</button><br><br>
+                      			<p id="submitted" style="background:black"><p>
+                      	</div>
+                      	</form><br><br><br>
+                      	<div class="footer">
+                        		<a>Website designed by Kimberley Paradis for SEG3125 - lab05</a>
+                      	</div>
+                      </body>
+                      </html>
+
+                      <script>
+                      function validateForm() {
+                      	//validate choice of service
+                      	if ($('input[name=service]:checked').length != 1) {
+                          		document.getElementById("serviceError").innerHTML = "*Please select at least one (1) service";
+                      	}else{
+                      		document.getElementById("serviceError").innerHTML = "";
+                        	}
+                      	//validate choice of appointment
+                      	if($("#datepicker").val() == "" || $("#time").val() == ""){
+                      		document.getElementById("dateError").innerHTML = "*Please select a valid date and time";
+                      	}else{
+                      		document.getElementById("dateError").innerHTML = "";
+                        	}
+                      	//validate name
+                      	var fname = document.forms["myForm"]["fname"].value;
+                      	var lname = document.forms["myForm"]["lname"].value;
+                        	if(fname == "" || lname == "") {
+                          		document.getElementById("nameError").innerHTML = "*Please fill in your full name";
+                        	}else{
+                      		document.getElementById("nameError").innerHTML = "";
+                        	}
+                      	//validate phone number
+                      	var phone = document.forms["myForm"]["phone"].value;
+                      	var phoneFormat = /^\d{10}$/;
+                      	if(!(phone.match(phoneFormat))){
+                      		document.getElementById("phoneError").innerHTML = "*Please enter a valid 10-digit phone number";
+                      	}else{
+                      		document.getElementById("phoneError").innerHTML = "";
+                      	}
+                      	//validate email address
+                      	var email = document.forms["myForm"]["email"].value.toLowerCase();
+                      	var emailFormat = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                      	if(!(email.match(emailFormat))){
+                      		document.getElementById("emailError").innerHTML = "*Please enter a valid email address";
+                      	}else{
+                      		document.getElementById("emailError").innerHTML = "";
+                      	}
+                      	//validate credit card number
+                      	var cardNumber = document.forms["myForm"]["cardNumber"].value;
+                      	var cardFormat = /^\d{16}$/;
+                      	if(!(cardNumber.match(cardFormat))){
+                      		document.getElementById("cardError").innerHTML = "*Please enter a 16-digit credit card number";
+                      	}else{
+                      		document.getElementById("cardError").innerHTML = "";
+                      	}
+                      	//validate credit card expiry date
+                      	var expiry = document.forms["myForm"]["expiry"].value;
+                      	var expiryFormat = /^\d{4}$/;
+                      	if(!(expiry.match(expiryFormat))){
+                      		document.getElementById("expiryError").innerHTML = "Please enter 4 digits for the month and year of expiry";
+                      	}else{
+                      		document.getElementById("expiryError").innerHTML = "";
+                      	}
+                      	//validate CVV
+                      	var cvv = document.forms["myForm"]["cvv"].value;
+                      	var cvvFormat = /^\d{3}$/;
+                      	if(!(cvv.match(cvvFormat))){
+                      		document.getElementById("cvvError").innerHTML = "*Please enter a 3-dgigit CVV";
+                      	}else{
+                      		document.getElementById("cvvError").innerHTML = "";
+                      	}
+                      	if($('input[name=service]:checked').length >= 1 && $("#datepicker").val() != "" && $("#time").val() != "" && fname != "" && lname != "" && phone.match(phoneFormat) && email.match(emailFormat) && cardNumber.match(cardFormat) && expiry.match(expiryFormat) && cvv.match(cvvFormat)){
+                      		document.getElementById("submitted").innerHTML = "Appointment submitted!";
+                      	}else{
+                      		document.getElementById("submitted").innerHTML = "";
+                      	}
+                      }
+                      </script>
+
+<!--
+Images used:
+Photo by <a href="/photographer/sankos-47596">Micha³ Sankowski</a> from <a href="https://freeimages.com/">FreeImages</a>
+Photo by <a href="/photographer/Gerbera-42451">Gerla Brakkee</a> from <a href="https://freeimages.com/">FreeImages</a>
+Photo by <a href="/photographer/deziner02-43515">Angel Norris</a> from <a href="https://freeimages.com/">FreeImages</a>
+Photo by Michael Dam on Unsplash
+Photo by Jonas Kakaroto on Unsplash
+Photo by Irina Iriser on Unsplash
+<div>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lorealparisusa.com%2Fbeauty-magazine%2Fhair-color%2Fhair-color-application%2Fhighlights-hair-foils-foilayage-balayage.aspx&psig=AOvVaw2vIquowck0ZqNDX0LJ-Jle&ust=1591847954674000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjWhvGt9ukCFQAAAAAdAAAAABAD
