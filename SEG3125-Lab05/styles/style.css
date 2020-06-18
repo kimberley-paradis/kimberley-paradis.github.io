@@ -6,8 +6,9 @@
 /* Code retrieved from https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 /* Code retrieved from https://www.w3schools.com/howto/howto_js_topnav.asp*/
 .topnav {
-  background-color: #333;
+  background-color: black;
   overflow: hidden;
+  
 }
 
 /* Style the links inside the navigation bar */
@@ -31,6 +32,7 @@
   background-color: #933A16;
   color: white;
 }
+.bt1 {color: red !important;}
 
 .panel-head{
   color: black;
