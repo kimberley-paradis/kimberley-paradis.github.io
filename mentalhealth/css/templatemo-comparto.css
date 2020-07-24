@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 { color: #333; }
 .tm-bg-color-1 { background-color: #000026; }
 .tm-bg-color-2 { background-color: #ACEBFF; }
 .tm-bg-color-3 { background-color: #666666; }
-.tm-bg-color-4 { background-color: #000026; }
+.tm-bg-color-4 { background-color: #F2F2F2; }
 .tm-bg-color-5 { background-color: #000026; }
 .tm-bg-color-6 { background-color: #F2F2F2; }
 .tm-bg-color-7 { background-color: #DDD; }
@@ -276,15 +276,14 @@ h1, h2, h3, h4, h5, h6 { color: #333; }
 
 .tm-gallery-filter > li > a.active,
 .tm-gallery-filter > li > a:hover {
-  color: #fff;
+  color: black;
 }
 
 .tm-gallery-section { padding-bottom: 40px; }
 
 .tm-gallery-outer {
-  margin-left: -10px;
-  margin-right: -10px;
-  background-color: white;
+
+  background-color: #000026;
 }
 
 .tm-gallery {
