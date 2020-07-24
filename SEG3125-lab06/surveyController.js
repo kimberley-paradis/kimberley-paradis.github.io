@@ -43,14 +43,14 @@ module.exports = function(app){
     // serve a template (ejs file) which will include the data from the data files
     app.get('/analysis', function(req, res){
         var name = readData("name");
-        var logoPlacement = readData("logoPlacement");
-        var where = readData("where");
-        var frequency = readData("frequency");
-        var recommend = readData("recommend");
-        var comments = readData("comments");
-        
-        res.render('showResults', {results: [name, logoPlacement, where, frequency, recommend, comments]});
-        console.log([name, logoPlacement, where, frequency, recommend, comments]);
+        var liveAlone = readData("liveAlone");
+        var members = readData("members");
+        var pets = readData("pets");
+        var fillSurvey = readData("fillSurvey");
+        var names = readData("names");
+
+        res.render('showResults', {results: [name, liveAlone, members, pets, fillSurvey, names]});
+        console.log([name, liveAlone, members, pets, fillSurvey, names]);
     });
 
     // when a user goes to localhost:3000/niceSurvey
@@ -59,7 +59,7 @@ module.exports = function(app){
         res.sendFile(__dirname+'/views/niceSurvey.html');
     });
 
-    // when a user types SUBMIT in localhost:3000/niceSurvey 
+    // when a user types SUBMIT in localhost:3000/niceSurvey
     // the action.js code will POST, and what is sent in the POST
     // will be recuperated here, parsed and used to update the data files
     app.post('/niceSurvey', urlencodedParser, function(req, res){
@@ -69,7 +69,7 @@ module.exports = function(app){
         for (var key in json){
             console.log(key + ": " + json[key]);
             // in the case of checkboxes, the user might check more than one
-            if ((key === "where") && (json[key].length === 2)){
+            if ((key === "members") && (json[key].length === 2)){
                 for (var item in json[key]){
                     combineCounts(key, json[key][item]);
                 }
@@ -82,6 +82,6 @@ module.exports = function(app){
         // if anyone can figure this out, let me know!
         res.sendFile(__dirname + "/views/niceSurvey.html");
     });
-    
+
 
 };
