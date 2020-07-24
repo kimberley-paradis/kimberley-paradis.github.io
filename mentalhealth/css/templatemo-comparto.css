@@ -7,12 +7,12 @@ https://templatemo.com/tm-544-comparto
 
 Color Codes
 ------------
-Jordy Blue: #98BDFF
+Jordy Blue: #000026
 Pink: #CC9999
-Seafoam: #93e9be
+Seafoam: #ff5a59
 Grey: #666666
-Sky Blue: #99CCFF
-Green: #99CC99
+Sky Blue: #000026
+Green: #000026
 Light Grey: #F2F2F2
 Text Color: #666
 
@@ -67,11 +67,11 @@ h1, h2, h3, h4, h5, h6 { color: #333; }
 .tm-mb-2 { margin-bottom: 40px; }
 .tm-mb-3 { margin-bottom: 60px; }
 .tm-mb-4 { margin-bottom: 30px; }
-.tm-bg-color-1 { background-color: #98BDFF; }
+.tm-bg-color-1 { background-color: #000026; }
 .tm-bg-color-2 { background-color: #ACEBFF; }
 .tm-bg-color-3 { background-color: #666666; }
-.tm-bg-color-4 { background-color: #99CCFF; }
-.tm-bg-color-5 { background-color: #99CC99; }
+.tm-bg-color-4 { background-color: #000026; }
+.tm-bg-color-5 { background-color: #000026; }
 .tm-bg-color-6 { background-color: #F2F2F2; }
 .tm-bg-color-7 { background-color: #DDD; }
 .tm-bg-color-8 { background-color: #EDEEEF; } /* Nav background */
@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 { color: #333; }
 .tm-nav-item.current .tm-nav-link,
 .tm-nav-link:hover {
   color: white;
-  background-color: #93e9be;
+  background-color: #ff5a59;
 }
 
 @media (max-width: 1033px) {
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6 { color: #333; }
   padding: 15px 40px;
   font-size: 1.1rem;
   border: none;
-  background-color: #93e9be;
+  background-color: #ff5a59;
   color: white;
 }
 
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 { color: #333; }
   background-color: #989A9B;
 }
 
-.tm-btn-3 { background-color: #99CC99; }
+.tm-btn-3 { background-color: #000026; }
 .tm-btn-3:hover { background-color: #547d54; }
 
 .clearfix::after {
@@ -553,7 +553,7 @@ figure.effect-bubba:hover p {
 }
 
 a { color: #666; }
-a:hover { color: #93e9be; }
+a:hover { color: #ff5a59; }
 button:hover { cursor: pointer; }
 
 .tm-social-link {
